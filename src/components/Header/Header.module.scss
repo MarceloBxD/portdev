@@ -3,5 +3,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: red;
+
+  .listItems {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+    }
+
+    .navItem {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
 }

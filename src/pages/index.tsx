@@ -8,6 +8,7 @@ import {
   useTransform,
   MotionValue,
 } from "framer-motion";
+import Header from "@/components/Header/Header.component";
 
 export default function Home() {
   function useParallax(value: MotionValue<number>, distance: number) {
@@ -22,7 +23,7 @@ export default function Home() {
     return (
       <section>
         <div ref={ref}>
-          <img src={`/${id}.jpg`} alt="A developer professional" />
+          <img src={`/${id}.avif`} alt="A developer professional" />
         </div>
         <m.h2 style={{ y }}>{`#00${id}`}</m.h2>
       </section>
@@ -44,9 +45,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <m.main className={styles.mainContainer}>
         {[1, 2, 3, 4, 5].map((image) => (
-          <Image id={image} />
+          <Image key={image} id={image} />
         ))}
         <m.div className={styles.progress} style={{ scaleX }} />
       </m.main>
