@@ -9,6 +9,7 @@ import {
   MotionValue,
 } from "framer-motion";
 import Header from "@/components/Header/Header.component";
+import { Footer } from "@/components/Footer/Footer.component";
 
 export default function Home() {
   function useParallax(value: MotionValue<number>, distance: number) {
@@ -51,6 +52,7 @@ export default function Home() {
           <Image key={image} id={image} />
         ))}
         <m.div className={styles.progress} style={{ scaleX }} />
+        <Footer />
       </m.main>
     </>
   );

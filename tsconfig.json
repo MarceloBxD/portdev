@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.mts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.mts", "src/data/footer-data.tsx"],
   "exclude": ["node_modules"]
 }

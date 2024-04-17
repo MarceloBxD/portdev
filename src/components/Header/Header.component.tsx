@@ -11,11 +11,19 @@ export default function Header() {
         <nav>
           <ul className={styles.listItems}>
             {navData.map((item) => (
-              <a key={item.id} href={item.path}>
+              <m.a
+                initial={{ y: -250 }}
+                animate={{ y: 0 }}
+                transition={{
+                  duration: 0.5,
+                }}
+                key={item.title}
+                className={styles.link}
+              >
                 <m.li className={styles.navItem}>
                   <span>{item.title}</span>
                 </m.li>
-              </a>
+              </m.a>
             ))}
           </ul>
         </nav>
