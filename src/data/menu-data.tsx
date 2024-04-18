@@ -2,6 +2,7 @@ export const SEE_PROJECTS = "Projetos Realizados";
 export const SEE_PROFILE = "Cursos";
 export const CERTIFICATES = "Certificados";
 export const CONTACT = "Entrar em Contato";
+export const PORTFOLIO_OWNER = "M.Bracet";
 
 type navDataProps = {
   id: string;

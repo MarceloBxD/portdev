@@ -47,6 +47,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+
       <m.main className={styles.mainContainer}>
         {[1, 2, 3, 4, 5].map((image) => (
           <Image key={image} id={image} />
